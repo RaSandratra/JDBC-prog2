@@ -3,12 +3,12 @@ public class testconnexion {
     public static void main(String[] args) {
         System.out.println("=== Test de connexion à PostgreSQL ===");
         
-        // 1. Informations de connexion (MODIFIEZ CES VALEURS)
+     
         String url = "jdbc:postgresql://localhost:5432/jdbc";
         String user = "postgres";
         String password = "12345678"; 
         
-        // 2. Essayer de se connecter
+   
         try {
             System.out.println("1. Chargement du driver...");
             
@@ -18,7 +18,7 @@ public class testconnexion {
             
             System.out.println("2. Tentative de connexion...");
             
-            // Cette ligne établit la connexion
+      
             java.sql.Connection connexion = java.sql.DriverManager.getConnection(url, user, password);
             
             if (connexion != null) {
